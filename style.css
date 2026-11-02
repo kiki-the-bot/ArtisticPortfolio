@@ -327,6 +327,22 @@ main {
   margin: 0;
 }
 
+.meirl {
+  display: flex ;
+  align-items: center;
+  width: 100%;
+}
+
+
+.meirl img {
+    width: auto;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
 /* Mobile Scroll Overflow Fix */
 @media (max-height: 700px) {
 }

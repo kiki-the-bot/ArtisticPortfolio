@@ -69,8 +69,7 @@
       <section class="catalog">
               <h1>[ 001 ]::::::::[ 0x0FF ]</h1>
             <button id="playBtn" class="btn">
-              <span class="icon ">▶</span>
-              
+              <span class="icon ">▶</span>             
             </button>
         <div class="track" id="waveform"></div>
 
@@ -83,9 +82,16 @@
               <h1>[ 003 ]::::::::[ 0xFF0 ]</h1> 
             <button id="playBtn3" class="btn" >
               <span class="icon">▶</span>
-              
             </button>
         <div class="track" id="waveform3"></div>
+
+              <h1>[ 004 ]::::::::[ 0xF0f ]</h1> 
+            <button id="playBtn4" class="btn" >
+              <span class="icon">▶</span>
+            </button>
+        <div class="track" id="waveform4"></div>
+
+
   </section>
 </main>
 
@@ -120,7 +126,6 @@
         <image src="assets/software used by me.jpg" class="flscreen"></image>
       </div>
 
-      <!-- Card 3: Video & Graphics -->
       <div class="software-card">
         <div class="card-header">
           <span class="category-tag">VISUAL & EDITING ٩(ˊᗜˋ*)و</span>
@@ -131,13 +136,22 @@
 
 </section>
 
+
+  <h3>░▒▓█[ GET_TO_KNOW_ME ]█▓▒░</h3>
+
+<div class="meirl">
+  
+
+  <img src="assets/mepic.jpg" >
+
+</div>
+
 <div class="marquee-wrapper">
   <div class="marquee-track">
     <span>PURO TALENTO MEXA // addicted to bass // 0x00000 // chronically online // ♡(˃͈ ˂͈ ) //</span>
     <span>PURO TALENTO MEXA // addicted to bass // 0x00000 // chronically online // ♡(˃͈ ˂͈ ) //</span>
   </div>
 </div>
-
 
 <footer class="disclaimer">
   <a>Human made art for human consumption ©</a>
@@ -152,7 +166,7 @@ const wavesurfer = WaveSurfer.create
   container: '#waveform',
   waveColor: '#bbff01',
   progressColor: '#34353a',
-  url: 'audio/beat1.mp3',
+  url: 'audio/guarachaprev.mp3',
   barWidth: '3',
   cursorColor: '#ddd5e9',
   cursorWidth: 5,
@@ -222,7 +236,7 @@ const wavesurfer = WaveSurfer.create({
   container: '#waveform3',
   waveColor: '#bbff01',
   progressColor: '#34353a',
-  url: 'audio/cumbiatonprev.mp3',
+  url: 'audio/beat1.mp3',
   barWidth: '3',
   cursorColor: '#ddd5e9',
   cursorWidth: 5,
@@ -247,6 +261,50 @@ wavesurfer.on('pause', () => {
 
 })
 </script>
+
+
+
+<script type="module">
+
+
+const playbtn4 = document.getElementById("playBtn4");
+const wavesurfer = WaveSurfer.create({
+  container: '#waveform4',
+  waveColor: '#bbff01',
+  progressColor: '#34353a',
+  url: 'audio/cumbiatonprev.mp3',
+  barWidth: '3',
+  cursorColor: '#ddd5e9',
+  cursorWidth: 5,
+  dragToSeek: true,
+
+})
+
+playbtn4.onclick = function(){
+  wavesurfer.playPause()
+};
+
+wavesurfer.on('play', () => {
+  wavesurfer.setOptions({
+    waveColor: '#fffff',
+  })
+});
+
+wavesurfer.on('pause', () => {
+  wavesurfer.setOptions({
+    waveColor: '#bbff01',
+  })
+
+})
+</script>
+
+<picture src="assets/mepic.jpg" class="meirl"></picture>
+
+<p>
+  this is me, haiii.
+
+</p>
+
 
 </body>
 </html>
