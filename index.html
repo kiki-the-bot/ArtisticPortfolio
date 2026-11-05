@@ -85,13 +85,6 @@
             </button>
         <div class="track" id="waveform3"></div>
 
-              <h1>[ 004 ]::::::::[ 0xF0f ]</h1> 
-            <button id="playBtn4" class="btn" >
-              <span class="icon">▶</span>
-            </button>
-        <div class="track" id="waveform4"></div>
-
-
   </section>
 </main>
 
@@ -164,7 +157,7 @@ const playbtn = document.getElementById("playBtn");
 const wavesurfer = WaveSurfer.create
 ({
   container: '#waveform',
-  waveColor: '#bbff01',
+  waveColor: '#f9f9f9',
   progressColor: '#34353a',
   url: 'audio/guarachaprev.mp3',
   barWidth: '3',
@@ -180,13 +173,13 @@ playbtn.onclick = function(){
 
 wavesurfer.on('play', () => {
   wavesurfer.setOptions({
-    waveColor: '#fffff',
+    waveColor: '#bbff01',
   })
 });
 
 wavesurfer.on('pause', () => {
   wavesurfer.setOptions({
-    waveColor: '#bbff01',
+    waveColor: '#fffff',
   })
 
 })
@@ -199,7 +192,7 @@ wavesurfer.on('pause', () => {
 const playbtn2 = document.getElementById("playBtn2");
 const wavesurfer = WaveSurfer.create({
   container: '#waveform2',
-  waveColor: '#bbff01',
+  waveColor: '#f9f9f9',
   progressColor: '#34353a',
   url: 'audio/rottenbeat.mp3',
   barWidth: '3',
@@ -215,13 +208,13 @@ playbtn2.onclick = function(){
 
 wavesurfer.on('play', () => {
   wavesurfer.setOptions({
-    waveColor: '#fffff',
+    waveColor: '#bbff01',
   })
 });
 
 wavesurfer.on('pause', () => {
   wavesurfer.setOptions({
-    waveColor: '#bbff01',
+    waveColor: '#fffff',
   })
 
 })
@@ -234,7 +227,7 @@ wavesurfer.on('pause', () => {
 const playbtn3 = document.getElementById("playBtn3");
 const wavesurfer = WaveSurfer.create({
   container: '#waveform3',
-  waveColor: '#bbff01',
+  waveColor: '#f9f9f9',
   progressColor: '#34353a',
   url: 'audio/beat1.mp3',
   barWidth: '3',
@@ -250,13 +243,13 @@ playbtn3.onclick = function(){
 
 wavesurfer.on('play', () => {
   wavesurfer.setOptions({
-    waveColor: '#fffff',
+    waveColor: '#bbff01',
   })
 });
 
 wavesurfer.on('pause', () => {
   wavesurfer.setOptions({
-    waveColor: '#bbff01',
+    waveColor: '#fffff',
   })
 
 })
@@ -264,46 +257,11 @@ wavesurfer.on('pause', () => {
 
 
 
-<script type="module">
-
-
-const playbtn4 = document.getElementById("playBtn4");
-const wavesurfer = WaveSurfer.create({
-  container: '#waveform4',
-  waveColor: '#bbff01',
-  progressColor: '#34353a',
-  url: 'audio/cumbiatonprev.mp3',
-  barWidth: '3',
-  cursorColor: '#ddd5e9',
-  cursorWidth: 5,
-  dragToSeek: true,
-
-})
-
-playbtn4.onclick = function(){
-  wavesurfer.playPause()
-};
-
-wavesurfer.on('play', () => {
-  wavesurfer.setOptions({
-    waveColor: '#fffff',
-  })
-});
-
-wavesurfer.on('pause', () => {
-  wavesurfer.setOptions({
-    waveColor: '#bbff01',
-  })
-
-})
-</script>
+<div class="meirllol">
 
 <picture src="assets/mepic.jpg" class="meirl"></picture>
+</div>
 
-<p>
-  this is me, haiii.
-
-</p>
 
 
 </body>
